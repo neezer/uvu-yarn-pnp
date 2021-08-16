@@ -3,5 +3,8 @@
   "packageManager": "yarn@3.0.1",
   "devDependencies": {
     "uvu": "^0.5.1"
+  },
+  "scripts": {
+    "test": "uvu"
   }
 }
