@@ -29,12 +29,45 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["test-uvu", ["workspace:."]]
     ],
     "fallbackPool": [
+      [
+        "dequal",
+        "npm:2.0.2"
+      ],
+      [
+        "diff",
+        "npm:5.0.0"
+      ],
+      [
+        "esm",
+        "npm:3.2.25"
+      ],
+      [
+        "kleur",
+        "npm:4.1.4"
+      ],
+      [
+        "mri",
+        "npm:1.1.6"
+      ],
+      [
+        "sade",
+        "npm:1.7.4"
+      ],
+      [
+        "totalist",
+        "npm:2.0.0"
+      ],
+      [
+        "uvu",
+        "npm:0.5.1"
+      ]
     ],
     "packageRegistryData": [
       [null, [
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["esm", "npm:3.2.25"],
             ["uvu", "npm:0.5.1"]
           ],
           "linkType": "SOFT",
@@ -54,6 +87,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/diff-npm-5.0.0-ad6900db18-f19fe29284.zip/node_modules/diff/",
           "packageDependencies": [
             ["diff", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["esm", [
+        ["npm:3.2.25", {
+          "packageLocation": "./.yarn/cache/esm-npm-3.2.25-762b3ebd40-978aabe2de.zip/node_modules/esm/",
+          "packageDependencies": [
+            ["esm", "npm:3.2.25"]
           ],
           "linkType": "HARD",
         }]
@@ -91,6 +133,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["test-uvu", "workspace:."],
+            ["esm", "npm:3.2.25"],
             ["uvu", "npm:0.5.1"]
           ],
           "linkType": "SOFT",

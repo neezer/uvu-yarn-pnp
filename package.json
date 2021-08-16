@@ -1,10 +1,11 @@
 {
   "name": "test-uvu",
   "packageManager": "yarn@3.0.1",
-  "devDependencies": {
-    "uvu": "^0.5.1"
-  },
   "scripts": {
-    "test": "uvu"
+    "test": "uvu -r esm tests"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "uvu": "^0.5.1"
   }
 }
